@@ -1,0 +1,147 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SweetBankTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MdcTypographyStyles.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MdcTypographyStyles.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MdcTypographyStyles.Headline4</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MdcTypographyStyles.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MdcTypographyStyles.Body2</item>
+    </style>
+
+    <style name="Theme.SweetBankTheme" parent="Base.Theme.SweetBankTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.SweetBankTheme" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextColor">@color/negativeAmountRed</item>
+    </style>
+
+    <style name="roundedImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_background</item>
+    </style>
+
+    <style name="TextAppearance.UserTitle" parent="TextAppearance.MdcTypographyStyles.Headline4">
+        <item name="android:textSize">32sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.AccountBalanceTitle" parent="TextAppearance.MdcTypographyStyles.Subtitle1">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/accountBalanceMainColor</item>
+    </style>
+
+    <style name="TextAppearance.AccountBalanceMain" parent="TextAppearance.MdcTypographyStyles.Headline4">
+        <item name="android:textSize">32sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/accountBalanceMainColor</item>
+    </style>
+
+    <style name="TextAppearance.AccountBalanceCents" parent="TextAppearance.MdcTypographyStyles.Headline6">
+        <item name="android:textColor">@color/accountBalanceMainColor</item>
+    </style>
+
+    <style name="TextAppearance.TransactionsMonthTitle" parent="TextAppearance.MdcTypographyStyles.Headline6">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Type System -->
+    <style name="TextAppearance.MdcTypographyStyles.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/mainTextColor</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray500</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/mainTextColor</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+    }
+
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:$androidx_core_version"
+    implementation "com.google.android.material:material:$material_version"
+}

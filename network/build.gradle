@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:$androidx_core_version"
+
+    implementation("com.squareup.okhttp3:okhttp:$okhttp_version")
+    api("com.squareup.retrofit2:retrofit:$retrofit_version")
+    api("com.squareup.okhttp3:logging-interceptor:$okhttp_version")
+
+    implementation "org.koin:koin-android:$koin_version"
+
+    api "com.squareup.moshi:moshi:$moshi_version"
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+}
