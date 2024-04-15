@@ -11,7 +11,7 @@ Watch out, if you want to run the project, you will find out that the `NetworkUt
 
 ## Version [2.0.0](https://github.com/davidmarinangeli/Sweet-Bank/releases/tag/2.0.0) released
 
-I decided to change the UI ( yeah, again ) and I got big help from my brother with all the new concepts and elements of the home screen. **Motion Layout** is now even more present here and the blobs move up along with the sheet.
+ **Motion Layout** is now even more present here and the blobs move up along with the sheet.
 
 The "Payee" part has been hidden ( temporary ) and the "profile picture" upload has been added instead ( with a picture rotation fix function ).
 
